@@ -23,7 +23,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 WORKDIR ${HOMEDIR}
 
 # 使用 CACHEBUST 参数来强制更新
-RUN git clone https://github.com/EvanZhangcarpe/edgeTTS.git openai-edge-tts \
+RUN git clone https://github.com/EvanZhangcarpe/edgeTTS.git edgeTTS-openai-api \
     && chmod +x ${HOMEDIR}/edgeTTS-openai-api/src/*.sh \
     && ls -la ${HOMEDIR}/edgeTTS-openai-api/src \
     && ls -la ${HOMEDIR}/edgeTTS-openai-api \
